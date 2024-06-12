@@ -2,3 +2,11 @@ WHAT IS BACKEND DEVELOPMENT?
 
 Backend Development is the term for the behind-the-scenes activities that happens when you do anything on a website or web application. It is mostly referred to the server-side of an application.
 
+WHAT IS NODE?
+
+(1) Node.js allows you to run JavaScript code outside of a web browser.
+(2) Before Node.js, JavaScript was mostly used for client-side scripting in browsers. It enables to use JS on server-side.
+
+NPM (Node Package Manager): helps you install and manage libraries and tools for your projects.
+
+NPX (Node Package Execute): tool for running npm packages directly without installing them globally, useful for one-time tasks or running local packages.

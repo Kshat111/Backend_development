@@ -35,3 +35,11 @@ app.post('/api/cars', (request, response) => {
     console.log(brand);
     response.send("Sample car response")
 });
+
+
+// connecting with MongoDB
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/myDatabase')
+.then(() => {console.log("Connection Successful")})
+.catch( (error) => {console.log("Recieved an error")} );

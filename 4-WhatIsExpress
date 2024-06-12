@@ -10,5 +10,13 @@ Steps:
 (i) create a folder
 (ii) npm init -y
 (iii) npm i express
-(iv) create a file (<fileName>) in the folder (for code: ./sampleServer/server.js)
-(v) node fileName.js
+(iv) create a file <fileName>.js in the folder (for code: ./sampleServer/server.js)
+(v) npm i nodemon // this updates the server in the runtime
+(vi) In package.json:
+
+    "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  }
+
+(vii) npm run dev
