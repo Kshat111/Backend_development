@@ -1,0 +1,25 @@
+COOKIES
+
+(1) Cookies are small files of information that a web server generates and sends to a web browser.
+(2) Web browsers store the cookies they receive for a predetermined period of time, or for the length of a user's session on a website.
+(3) Browser then attach the cookies to any future requests the user can make.
+(4) Cookies help inform websites about the user, enhacing the UX.
+(5) Storage - cookies are stored on user's device
+(6) Usage - User sessions, personalization, tracking
+
+(7) TYPES OF COOKIES:
+
+(i) Session cookies: get deleted after a user's session ends (has no expiration date i.e. will get deleted after session ends)
+
+(ii) Persistent cookies: always contain an expiration date.
+
+(iii) Authentication cookies: ensure that sensitive information is delivered to the correct user sessions by associating user account information with a cookie identifier string. 
+
+(iv) Tracking cookies: record user activity, and browsers send this record to the associated tracking service the next time they load a website that uses that tracking service.
+
+(v) Zombie cookies: create backup versions of themselves outside of a browser's typical cookie storage location. They use these backups to reappear within a browser after they are deleted (used by unscrupulous ad networks, and even by cyber attackers).
+
+
+THIRD PARTY COOKIE: Understand it by an example - 
+
+When Alice does her shopping at jeans.example.com, the jeans.example.com origin server uses a session cookie to remember that she has logged into her account. This is an example of a first-party cookie. However, Alice may not be aware that a cookie from example.ad-network.com is also stored in her browser and is tracking her activity on jeans.example.com, even though she is not currently accessing example.ad-network.com.

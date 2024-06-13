@@ -1,0 +1,6 @@
+JSON Web Tokens (JWT)
+
+Visit this to make a JWT: https://jwt.io/#debugger-io
+
+(1) open standard that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
+(2) consist of three parts separated by dots which are - header, payload, and signature (which is signed using a secret/public/private kry with the HMAC algorithm).

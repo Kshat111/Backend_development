@@ -10,3 +10,6 @@ WHAT IS NODE?
 NPM (Node Package Manager): helps you install and manage libraries and tools for your projects.
 
 NPX (Node Package Execute): tool for running npm packages directly without installing them globally, useful for one-time tasks or running local packages.
+
+
+HOW THE INTERNET WORKS?

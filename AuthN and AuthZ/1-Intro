@@ -1,0 +1,23 @@
+SECURITY IN WEB APPS
+
+Web apps can be secured using authentication and authorization, tokens and JWT comes into picture.
+
+
+AUTHENTICATION
+
+(1) means making sure that a person or device is who (or what) they claim to be.
+(2) ensures that data is not exposed to the wrong person.
+(3) common methods: username and password combination, multi-factor authn, public key certificate, biometric authn
+
+
+AUTHORIZATION
+
+(1) determines what an authenticated user can see and do.
+(2) same as 'permissions'
+
+
+OPEN AUTHORIZATION (OAUTH)
+
+(1) standard for passing authz from one service to another. 
+(2) used for cloud services
+(3) Without the use of OAuth, a user's permissions would have to be set up separately in each application.
