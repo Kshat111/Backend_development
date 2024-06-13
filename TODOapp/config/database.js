@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-require('dotenv').config(); // everything defined in env is loaded
+require("dotenv").config(); // everything defined in env is loaded
 
 const dbConnect = () => {
     mongoose.connect(process.env.DATABASE_URL)
     // all the configurations int=side the .env file can only be fed to the process object after installing dotenv library
-    .then(() => {console.log("Connection Successful")})
+    .then(() => {console.log("Connection with DB is Successful")})
     .catch( (error) => {
         console.log("Recieved an error");
         console.error(error.message);

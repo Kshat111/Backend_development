@@ -4,22 +4,22 @@ const todoSchema = new mongoose.Schema(
         title:{
             type:String,
             required:true,
-            maxLength:50
+            maxLength:50,
         },
-        description:{
+        description: {
             type:String,
             required:true,
-            maxLength:50
+            maxLength:50,
         },
-        creditAt:{
+        createdAt:{
             type:Date,
             required:true,
-            maxLength:Date.now()
+            default:Date.now(),
         },
         updatedAt:{
             type:Date,
             required:true,
-            maxLength:Date.now()
+            default:Date.now(),
         }
     }
 );
