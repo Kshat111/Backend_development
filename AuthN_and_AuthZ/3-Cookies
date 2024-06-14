@@ -23,3 +23,8 @@ COOKIES
 THIRD PARTY COOKIE: Understand it by an example - 
 
 When Alice does her shopping at jeans.example.com, the jeans.example.com origin server uses a session cookie to remember that she has logged into her account. This is an example of a first-party cookie. However, Alice may not be aware that a cookie from example.ad-network.com is also stored in her browser and is tracking her activity on jeans.example.com, even though she is not currently accessing example.ad-network.com.
+
+
+WHY IS EXPIRATION TIME REQUIRED FOR A COOKIE?
+
+If a session cookie does not expire, it can be hijacked and used maliciously. By limiting the duration a cookie is valid, the window of opportunity for such attacks is reduced.
