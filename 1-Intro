@@ -13,3 +13,31 @@ NPX (Node Package Execute): tool for running npm packages directly without insta
 
 
 HOW THE INTERNET WORKS?
+
+There are two main concepts for the working of the internet: Packets and Protocols.
+
+(1) Packet: A small segment of a larger message; contains both header(tells us what to do with this packet) and data; data get broken up into smaller packets (which then get translated into bits) when it gets transferred over the internet; these reach their destination by various devices (and middleboxes) like routers and switches using routing and forwarding algorithms like Dijkstra's or Bellman Ford algo (pkts get sent over the internet using Packet Switching)
+
+(2) Protocols: A standardized way of doing certain actions so that two or more devices are able to communicate with each other.
+
+HTTP: Hyper Text Transfer Protocol - 
+TCP: Transmission Control Protocol -
+UDP: User Datagram Protocol -
+SMTP: Simple Mail Transfer Protocol -
+IMAP: Internet Message Access Protocol -
+FTP: File Transfer Protocol -
+SIP: Session Initiation Protocol -
+RTP: Real-time Transfer Protocol -
+SNMP: Simple Network Management Protocol -
+IP: Internet Protocol -
+QUIC: Quick UDP Internet Connections -
+ICMP: Internet Control Message Protocol -
+OSPF: Open Source Path First -
+BGP: Border Gateway Protocol -
+DHCP: Dynamic Host Configuration Protocol -
+DASH: Dynamic Adaptive Streaming over HTTP -
+PPP: Point-to-Point Protocol -
+PDCP: Packet Data Convergence Protocol -
+ARP: Address Resolution Protocol -
+GTP: GPRS (General Packet Radio Service) Tunnelling Protocol -
+STP: Spanning Tree Protocol -
