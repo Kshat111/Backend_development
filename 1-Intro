@@ -20,24 +20,65 @@ There are two main concepts for the working of the internet: Packets and Protoco
 
 (2) Protocols: A standardized way of doing certain actions so that two or more devices are able to communicate with each other.
 
-HTTP: Hyper Text Transfer Protocol - 
-TCP: Transmission Control Protocol -
-UDP: User Datagram Protocol -
-SMTP: Simple Mail Transfer Protocol -
-IMAP: Internet Message Access Protocol -
-FTP: File Transfer Protocol -
-SIP: Session Initiation Protocol -
-RTP: Real-time Transfer Protocol -
-SNMP: Simple Network Management Protocol -
-IP: Internet Protocol -
-QUIC: Quick UDP Internet Connections -
-ICMP: Internet Control Message Protocol -
-OSPF: Open Source Path First -
-BGP: Border Gateway Protocol -
-DHCP: Dynamic Host Configuration Protocol -
-DASH: Dynamic Adaptive Streaming over HTTP -
-PPP: Point-to-Point Protocol -
-PDCP: Packet Data Convergence Protocol -
-ARP: Address Resolution Protocol -
-GTP: GPRS (General Packet Radio Service) Tunnelling Protocol -
-STP: Spanning Tree Protocol -
+HTTP: Hyper Text Transfer Protocol - Transmit web pages and other hypermedia
+TCP: Transmission Control Protocol - Reliable, connection-oriented protocol for data transferring
+UDP: User Datagram Protocol - Unreliable data transmission, connectionless
+SMTP: Simple Mail Transfer Protocol - Sending email messages between servers
+IMAP: Internet Message Access Protocol - Retrieving and managing emails from a server
+FTP: File Transfer Protocol - Transferring files between client and server
+SIP: Session Initiation Protocol - Initiating, maintaining, and terminating multimedia communication sessions
+RTP: Real-time Transfer Protocol - Delivering real-time audio and video over IP networks
+SNMP: Simple Network Management Protocol - Managing and monitoring network devices
+IP: Internet Protocol - Routing and addressing data packets 
+QUIC: Quick UDP Internet Connections - Transport protocol optimized for low-latency data transmission over UDP
+ICMP: Internet Control Message Protocol - Error reporting and diagnostics in IP networks
+OSPF: Open Source Path First - Determining the shortest path for routing within an AS
+BGP: Border Gateway Protocol - Exchanging routing information between ASes
+DHCP: Dynamic Host Configuration Protocol - Assigning IP addresses and network settings to devices
+DASH: Dynamic Adaptive Streaming over HTTP - Adaptive video streaming over HTTP
+PPP: Point-to-Point Protocol - Direct communication between two nodes
+PDCP: Packet Data Convergence Protocol - Header compression and encryption in mobile networks
+ARP: Address Resolution Protocol - Map IP addresses to MAC addresses
+GTP: GPRS (General Packet Radio Service) Tunnelling Protocol - Tunneling and transmitting data in mobile networks
+STP: Spanning Tree Protocol - Preventing loops in Ethernet networks
+
+A DAY IN LIFE OF A WEB REQUEST:
+
+(1) Connecting to the Internet: DHCP
+
+(i) The laptop sends a DHCP request as a broadcast on the local network
+(ii) The router (acting as a DHCP server) receives the broadcast request
+(iii) The ethernet frame is de-muxed to extract the IP and UDP layers, and the DHCP layer is processed
+
+(2) Receiving DHCP ACK
+
+(i) DHCP sends an ACK to the client
+(ii) The switch learns the path (via MAC add) and forwards the frame
+(iii) The client de-multiplexes the layers to extract the DHCP ACK
+
+(Now the client contains an IP address, address of default gateway (first-hop router), and the DNS server)
+
+(3) ARP
+
+Before sending a DNS query, client needs the MAC address of default gateway
+
+(i) Client sends an ARP query to request the MAC address of router interface
+(ii) The router responds with an ARP reply containing its MAC address
+
+(4) Using DNS
+
+(i) DNS query is created and encapsulated in UDP, IP, and ethernet
+(ii) Ip datagram is forwarded and reaches the DNS server
+(iii) DNS server replies with the IP address of the requested site
+
+(5) TCP connection
+
+(i) The client sends a TCP SYN packet to initiate the 3-way handshake
+(ii) The server responds with a SYN-ACK
+(iii) The client sends an ACK, completing the handshake
+
+(6) HTTP req and res
+
+(i) The HTTP request is encapsulated in TCP, IP, and Ethernet and sent to the Google web server
+(ii) The server responds with an HTTP reply, containing the webpage content
+(iii) The IP datagram carrying the reply is routed back to the client
