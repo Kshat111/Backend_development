@@ -3,7 +3,7 @@
 - A computer that listens for incoming requests from the clients (frontend). For example, Apache Ngins, IIS servers, Tomcat
 - An ordinary computer can be set up as a server, it doesn't necessarily have to be a powerful computer.
 
-# TYPES OF SERVERS
+## TYPES OF SERVERS
 
 1. STATIC: 
 - A static web server or stack consists of a computer (hardware) with an HTTP server (software).

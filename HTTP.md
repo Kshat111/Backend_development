@@ -1,4 +1,4 @@
-# PROTOCOL
+## PROTOCOL
 
 In networking, a protocol is a standardized way of doing certain actions and formatting data so that two or more devices are able to communicate with and understand each other.
 
