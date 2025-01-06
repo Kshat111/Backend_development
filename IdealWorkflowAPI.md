@@ -14,13 +14,13 @@ sampleAPI/
 └── package.json
 
 Definitions:
-1. Controllers: contain logic for handling req and res (like createTodo.js will contain logic to handle creating new todo item over HTTP POST method)
-2. config: contains configuration files of the app like database.js which contains code to connect the app to database
-3. middlewares: intercept the req and res for parsing req bodies, managing sessions, etc; used in authN and authZ
-4. models: defines data structures and schema used in the app (like the schema for a todo item)
-5. routes: defines how different HTTP req are handled by mapping them to corresponding controller functions. Basically, this defines all routes to operations like GET, POST, PATCH, DELETE (actual CRUD is handled by controller, routes/ is just making the URI (Uniform REsource Identifier))
-6. env: sensitive info like PORT no, API key, DB_URI, admin details
-7. index: the main entry point of the application, sets up the server, middleware, database, everything is set to one place here
+(i) Controllers: contain logic for handling req and res (like createTodo.js will contain logic to handle creating new todo item over HTTP POST method)
+(ii) config: contains configuration files of the app like database.js which contains code to connect the app to database
+(iii) middlewares: intercept the req and res for parsing req bodies, managing sessions, etc; used in authN and authZ
+(iv) models: defines data structures and schema used in the app (like the schema for a todo item)
+(v) routes: defines how different HTTP req are handled by mapping them to corresponding controller functions. Basically, this defines all routes to operations like GET, POST, PATCH, DELETE (actual CRUD is handled by controller, routes/ is just making the URI (Uniform REsource Identifier))
+(vi) env: sensitive info like PORT no, API key, DB_URI, admin details
+(vii) index: the main entry point of the application, sets up the server, middleware, database, everything is set to one place here
 
 4. Configure environment variables in .env file
 5. Set up DB connection in 'config/' folder by creating a 'database.js' file
